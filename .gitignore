@@ -74,9 +74,9 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 .vs/
-c_learning/.vs/
-c_learning/x64/
-c_learning/c_learning.sln
-c_learning/c_learning.vcxproj
-c_learning/c_learning.vcxproj.filters
-c_learning/c_learning.vcxproj.user
+*/.vs/
+*/x64/
+*.sln
+*.vcxproj
+*.filters
+*.user
