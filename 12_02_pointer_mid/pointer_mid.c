@@ -73,7 +73,7 @@ int main() {
 
 
 	// Multi-dimensional Array
-	int a[4][3] = {
+	/*int a[4][3] = {
 		{1,2,3}, {4,5,6}
 	};
 	int i, j;
@@ -83,8 +83,15 @@ int main() {
 			printf("a[%d][%d] %p \t", i, j, &a[i][j]);
 		}
 		printf("\n");
-	}
+	}*/
 
+	// The usage of the name of an array
+	int arr[3] = { 1,2,3 };
+
+	printf("First Element's Address  : %p \n", &arr[0]);
+	printf("Array's Address          : %p \n", &arr);
+	printf("Size of Array            : %d \n", sizeof(arr));
+	printf("Third Element *(arr + 2) : %d \n", *(arr + 2));
 
 	return 0;
 }
