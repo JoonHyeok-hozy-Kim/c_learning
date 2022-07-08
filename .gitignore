@@ -80,3 +80,9 @@ fabric.properties
 *.vcxproj
 *.filters
 *.user
+*log
+*recipe
+*ilk
+*obj
+*idb
+*pdb
