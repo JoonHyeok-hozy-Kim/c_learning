@@ -1,6 +1,5 @@
-﻿  string_and_buffer.cpp
-C:\Users\danie\computer_science\c_learning\15_02_string_and_buffer\15_02_string_and_buffer\string_and_buffer.cpp(2,13): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
-C:\Users\danie\computer_science\c_learning\15_02_string_and_buffer\15_02_string_and_buffer\string_and_buffer.cpp(22,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\danie\computer_science\c_learning\15_02_string_and_buffer\15_02_string_and_buffer\string_and_buffer.cpp(25,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\danie\computer_science\c_learning\15_02_string_and_buffer\15_02_string_and_buffer\string_and_buffer.cpp(5,7): warning C4101: 's' :참조되지 않은 지역 변수입니다.
+﻿  string_and_buffer.c
+C:\Users\danie\computer_science\c_learning\15_02_string_and_buffer\15_02_string_and_buffer\string_and_buffer.c(34,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\danie\computer_science\c_learning\15_02_string_and_buffer\15_02_string_and_buffer\string_and_buffer.c(37,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\danie\computer_science\c_learning\15_02_string_and_buffer\15_02_string_and_buffer\string_and_buffer.c(5,7): warning C4101: 's' :참조되지 않은 지역 변수입니다.
   15_02_string_and_buffer.vcxproj -> C:\Users\danie\computer_science\c_learning\15_02_string_and_buffer\x64\Debug\15_02_string_and_buffer.exe
