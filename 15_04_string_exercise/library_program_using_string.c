@@ -8,6 +8,10 @@ int search_book_by_publisher(char (*publishers)[30], int book_len);
 int str_eq(char* str1, char* str2);
 int borrow_book(int *book_status);
 int return_book(int* book_status);
+void print_list(int book_len, char(*titles)[30], char(*authors)[30], char(*publishers)[30], int* book_status);
+void print_space(int num);
+void print_str(char* pstr, int len);
+int digit_count(int num);
 
 int main() {
 	int choice, book_no=0, search_result;
@@ -24,6 +28,7 @@ int main() {
 		printf("  5. Borrow book.\n");
 		printf("  6. Return book.\n");
 		printf("  7. Exit.\n");
+		printf("  8. Show book list.\n");
 		printf("Job No : ");
 		scanf("%d", &choice);
 
@@ -52,7 +57,9 @@ int main() {
 		case 7:
 			printf("Bye~");
 			return 0;
-
+		case 8:
+			print_list(book_no, titles, authors, publishers, book_status);
+			break;
 		default:
 			printf("Wrong number : %d\n", choice);
 		}
@@ -229,4 +236,68 @@ int return_book(int* book_status) {
 		return -1;
 	}
 
+};
+
+void print_list(int book_len, char(*titles)[30], char(*authors)[30], char(*publishers)[30], int* book_status) {
+	int i;
+
+	printf("No.");
+	print_space(2);
+	printf("Title");
+	print_space(25);
+	printf("Author");
+	print_space(24);
+	printf("Publisher");
+	print_space(21);
+	printf("Availablity");
+	printf("\n");
+
+	for (i = 0; i < book_len; i++) {
+		printf("%d", i + 1);
+		print_space(5 - digit_count(i + 1));
+		print_str(*titles, 30);
+		print_str(*authors, 30);
+		print_str(*publishers, 30);
+		if (*book_status < 0) {
+			printf("X");
+		}
+		else {
+			printf("O");
+		}
+		printf("\n");
+		titles++;
+		authors++;
+		publishers++;
+		book_status++;
+	}
+};
+
+void print_space(int num) {
+	int i;
+	for (i = 0; i < num; i++) {
+		printf(" ");
+	}
+};
+
+void print_str(char* pstr, int len) {
+	int i, cnt = 0;
+	while (*pstr) {
+		printf("%c", *pstr);
+		cnt++;
+		*pstr++;
+	}
+	for (i = 0; i < len - cnt; i++) {
+		printf(" ");
+	}
+};
+
+
+
+int digit_count(int num) {
+	int cnt = 1;
+	while (num >= 10) {
+		num /= 10;
+		cnt++;
+	}
+	return cnt;
 };
