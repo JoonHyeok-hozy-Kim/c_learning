@@ -37,7 +37,7 @@ void main() {
 	//int* pa = local_variable_test();
 	int* pa = static_variable_test();
 	printf("%d\n", *pa);
-	printf("In main, pa at : %p\n", pa);
+	printf("In main, pa at : %p\n\n", pa);
 
 	static_variable_test();
 	printf("%d\n", *pa);
